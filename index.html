@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parking Database System</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <form method="POST" class="appointment-form" id="appointment-form">
+                <h2>Parking Form</h2>
+                <h3 class="form-title">What type of user are you ?</h3>
+                <div class="form-radio">
+                  <input type="radio" name="member_level" value="staff" id="newbie"  />
+                  <label for="newbie">Staff</label>
+
+                    <input type="radio" name="member_level" value="student" id="average" />
+                    <label for="average" >Student</label>
+
+                    <input type="radio" name="member_level" value="visitor" id="master" />
+                    <label for="master" >Visitor</label>
+                </div>
+                <div class="form-group-1 form1" >
+                  <input type="number" name="staff_ID" id="staff_ID" placeholder="Staff ID" required />
+                    <input type="text" name="Fname" id="Fname" placeholder="First Name" required />
+                    <input type="text" name="Lname" id="Lname" placeholder="Last Name" required />
+                    <input type="number" name="contact" id="contact" placeholder="Contact" required />
+                    <input type="text" name="address" id="address" placeholder="Address" required />
+                    <input type="text" name="vehicle_no" id="vehicle _no" placeholder="Your Vehicle No" required />
+
+                </div>
+
+                <div class="form-group-1 form2">
+                  <input type="number" name="student_ID" id="student_ID" placeholder="Student ID" required />
+                    <input type="text" name="Fname" id="Fname" placeholder="First Name" required />
+                    <input type="text" name="Lname" id="Lname" placeholder="Last Name" required />
+                    <input type="number" name="contact" id="contact" placeholder="Contact" required />
+                    <input type="text" name="address" id="address" placeholder="Address" required />
+                    <input type="text" name="education_status" id="education_status" placeholder="Education Status" required />
+                    <input type="text" name="vehicle_no" id="vehicle _no" placeholder="Your Vehicle No" required />
+                    </div>
+
+                <div class="form-group-1 form3">
+                  <input type="number" name="visitor_ID" id="visitor_ID" placeholder="Visitor ID" required />
+                    <input type="text" name="visitor_cnic" id="visitor_cnic" placeholder="CNIC" required />
+                    <input type="text" name="Fname" id="Fname" placeholder="First Name" required />
+                    <input type="text" name="Lname" id="Lname" placeholder="Last Name" required />
+                    <input type="number" name="contact" id="contact" placeholder="Contact" required />
+                    <input type="text" name="vehicle_no" id="vehicle _no" placeholder="Your Vehicle No" required />
+                </div>
+
+                <div class="form-group-2">
+                  <div style="background-image: url('form-img.jpg');">
+
+                    <h3>Parking Slot</h3>
+                    <input type="number" name="parking_ID" id="parking_ID" placeholder="Parking ID" required />
+                    <div class="select-list">
+                        <select name="course_type" id="course_type">
+                            <option slected value="">Vehicle Type</option>
+                            <option value="bike">Bike</option>
+                            <option value="car">Car</option>
+                            <option value="bus">Bus</option>
+
+
+                        </select>
+                    </div>
+                    <input type="text" name="slot_no" id="slot_no" placeholder="Parking Slot No" required />
+                    <h4>Check In</h4>
+                    <input type="date" name="check_in" id="check_in" placeholder="Check In" required />
+                    <h4>Check Out</h4>
+                    <input type="date" name="check_out" id="check_out" placeholder="Check Out" required />
+                    <input type="number" name="days" id="days" placeholder="Parking Days" required />
+                    <h4>Parking Date</h4>
+                    <input type="date" name="dates" id="dates" placeholder="Parking Date" required />
+                    <input type="number" name="capacity" id="capacity" placeholder="Parking Capacity" required />
+                    <input type="number" name="price" id="price" placeholder="Price" required />
+
+                    <div class="select-list">
+                        <select name="course_type" id="course_type">
+                            <option slected value="">Payment Type</option>
+                            <option value="bike">Cash</option>
+                            <option value="car">Debit</option>
+                            <option value="bus">JazzCash</option>
+                            <option value="bus">EasyPaisa</option>
+
+
+                        </select>
+                    </div>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                        <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree to the  <a href="#" class="term-service">Terms and Conditions</a></label>
+                    </div>
+                    <div class="form-submit">
+                        <input type="submit" name="submit" id="submit" class="submit" value="Lets Go" />
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
